@@ -1,0 +1,131 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$sidebar-bg-color: rgba(15, 119, 113, 1);
+$submenu-bg-color: rgba(15, 119, 113, 0.5);
+
+.manage-user {
+  .users-content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px;
+
+    .search {
+      width: 400px;
+      margin: auto 0 auto 9px;
+
+      .input-group {
+        border: 1px solid $submenu-bg-color;
+        border-radius: 20px;
+
+        .form-control {
+          border: 1px solid $submenu-bg-color;
+          background: none;
+          color: $sidebar-bg-color;
+          border: none;
+          font-size: 20px;
+        }
+
+        .form-control:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        .input-group-append {
+          .btn-outline-secondary {
+            border: none;
+            font-size: 20px;
+            color: $sidebar-bg-color;
+          }
+
+          .btn-outline-secondary:hover {
+            color: $submenu-bg-color;
+            background-color: none;
+            background: none;
+          }
+        }
+      }
+    }
+    .users-content__btn {
+      // height: 60px;
+      display: flex;
+      // justify-contents
+    }
+  }
+
+  .users-table {
+    // .ScrollbarsCustom {
+      margin: 12px 32px;
+      height: 70vh;
+      .table {
+        font-size: 20px;
+        .center {
+          text-align: center;
+        }
+
+        th {
+          background-color: $sidebar-bg-color;
+          color: $icon-bg-color;
+        }
+      }
+
+      .table-border {
+        border: 1px solid $submenu-bg-color;
+      }
+
+      .displayFlex {
+        display: flex;
+        justify-content: center;
+      }
+    // }
+  }
+
+  .dropdown-toggle,
+  .btn-all {
+    border-radius: 5px;
+    margin: 12px 5px;
+    padding: 0 15px !important;
+    color: $icon-bg-color;
+    border: 1px solid $icon-bg-color;
+    font-size: 20px;
+    height: 40px;
+    background-color: $sidebar-bg-color !important;
+
+    &:hover {
+      background-color: $submenu-bg-color !important;
+    }
+  }
+
+  .modal-title {
+    color: $sidebar-bg-color;
+  }
+}
+
+.page-item {
+  margin: 0 4px;
+}
+
+.page-link {
+  color: $sidebar-color !important;
+  border: 1px solid $sidebar-bg-color !important;
+  background-color: $submenu-bg-color !important;
+}
+
+.form-label__date {
+  display: flex;
+  border: 1px solid #dee2e6;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+  }
+
+  .form-control__item {
+    width: 20px;
+    border: none;
+  }
+}
+
+.dropdown-item.h4 {
+  font-size: 20px;
+}

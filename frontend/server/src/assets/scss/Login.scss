@@ -1,0 +1,184 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$sidebar-bg-color: #6F459B;
+$submenu-bg-color: #8D66AF;
+
+.modal1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  display:flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color:  $sidebar-bg-color
+}
+.wrapper1 {
+  position: relative;
+  width: 400px;
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  overflow: hidden;
+}
+
+.wrapper1.active {
+  height: 520px;
+}
+
+.wrapper1 .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  color: $icon-bg-color;
+  font-size: 2em;
+  display: flex;
+  background:  $sidebar-bg-color;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  border-bottom: 2px solid #000;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #000;
+  font-weight: 600;
+  pointer-events: none;
+  transform: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  color: #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+  background: transparent;
+}
+
+.input-box .icon {
+  right: 8px;
+  color:  $sidebar-bg-color;
+  font-size: 1.2em;
+  line-height: 55px;
+  position: absolute;
+}
+
+.remember-forgot {
+  display: flex;
+  font-size: 0.9em;
+  color: #000;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  justify-content: end;
+}
+
+.remember-forgot label input {
+  accent-color: #000;
+  margin-right: 3px;
+  font-weight: 500;
+}
+
+.remember-forgot a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-link:hover,
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn-submit-login {
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background:  $sidebar-bg-color;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.btn-submit-login:hover {
+  cursor: pointer;
+  background: $sidebar-bg-color;
+}
+
+.btn-submit-login:disabled {
+ background: #ccc;
+ cursor: no-drop;
+}
+
+.login-register {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.login-link,
+.register-link {
+  color: $sidebar-bg-color;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.loaderIcon {
+  margin-right: 7px;
+  top: 2px;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+      transform: scale(1) rotate(0deg);
+  }
+  to {
+      transform: scale(1) rotate(360deg);
+  }
+}

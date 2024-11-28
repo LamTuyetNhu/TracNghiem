@@ -1,0 +1,39 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$sidebar-bg-color: rgba(15, 119, 113, 1);
+$submenu-bg-color: rgba(15, 119, 113, 0.5);
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+.admin-container {
+  display: flex;
+
+  .admin-sidebar {
+    .pro-sidebar {
+      height: 100%;
+
+    }
+  }
+
+  .admin-content {
+    width: 100%;
+    // height: calc(100vh - 10px);
+
+    .admin-header {
+      display: flex;
+      height: 75px;
+      border-bottom: 1px solid $sidebar-bg-color;
+
+      .admin-header__menu {
+        font-size: 24px;
+        margin: 24px;
+        color: $sidebar-bg-color;
+      }
+
+      .admin-header__content {
+        line-height: 66px;
+        font-size: 26px;
+        color: $sidebar-bg-color;
+      }
+    }
+  }
+}

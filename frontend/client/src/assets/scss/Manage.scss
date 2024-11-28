@@ -1,0 +1,187 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$sidebar-bg-color: #6f459b;
+$submenu-bg-color: #8d66af;
+
+.manage-user {
+  .users-content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px;
+
+    .search {
+      width: 400px;
+      margin: auto 0 auto 9px;
+
+      .input-group {
+        border: 1px solid $submenu-bg-color;
+        border-radius: 20px;
+
+        .form-control {
+          border: 1px solid $submenu-bg-color;
+          background: none;
+          color: $sidebar-bg-color;
+          border: none;
+          font-size: 20px;
+        }
+
+        .form-control:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        .input-group-append {
+          z-index: 0;
+          .btn-outline-secondary {
+            border: none;
+            font-size: 20px;
+            color: $sidebar-bg-color;
+          }
+
+          .btn-outline-secondary:hover {
+            color: $submenu-bg-color;
+            background-color: none;
+            background: none;
+          }
+        }
+      }
+    }
+    .users-content__btn {
+      // height: 60px;
+      display: flex;
+      // justify-contents
+    }
+  }
+
+  .manage-name {
+    text-align: center;
+    margin: 32px 0 18px;
+    font-size: 32px;
+    color: $sidebar-bg-color;
+    font-weight: 700;
+  }
+  .users-table {
+    margin: 12px 32px;
+    height: 600px;
+
+    .table {
+      font-size: 20px;
+      white-space: nowrap;
+
+      .center {
+        text-align: center;
+      }
+
+      th {
+        background-color: $sidebar-bg-color;
+        color: $icon-bg-color;
+        white-space: nowrap;
+      }
+    }
+
+    .table-border {
+      border: 1px solid $submenu-bg-color;
+    }
+
+    .displayFlex {
+      display: flex;
+      justify-content: center;
+    }
+    // }
+  }
+
+  .dropdown-toggle,
+  .btn-all {
+    border-radius: 5px;
+    margin: 12px 5px;
+    padding: 0 15px !important;
+    color: $icon-bg-color;
+    border: 1px solid $icon-bg-color;
+    font-size: 20px;
+    height: 40px;
+    background-color: $sidebar-bg-color !important;
+
+    &:hover {
+      background-color: $submenu-bg-color !important;
+      
+    }
+  }
+
+  .btn-violet {
+    background-color: $sidebar-bg-color !important;
+    border-radius: 5px;
+    // margin: 12px 5px;
+    padding: 0 15px !important;
+    color: $icon-bg-color;
+    border: 1px solid $icon-bg-color;
+    // font-size: 20px;
+    height: 40px;
+
+    &:hover {
+      background-color: $submenu-bg-color !important;
+    }
+  }
+
+  .modal-title {
+    color: $sidebar-bg-color;
+  }
+
+  @media (max-width: 720px) {
+    .users-content {
+      flex-direction: column; // Chuyển sang cột khi màn hình nhỏ hơn 720px
+      .search {
+        width: 100%; // Input chiếm toàn bộ chiều rộng
+        margin: 32px 2px 16px 2px;
+      }
+
+      .users-content__btn {
+        display: flex;
+        justify-content: flex-end; // Combo button nằm dưới và bên phải
+        margin-top: -20px;
+        margin-bottom: 14px;
+      }
+    }
+
+    .users-table {
+      position: relative;
+      margin: 72px 32px 0 32px;
+      // overflow-x: hidden; // Cho phép bảng trượt ngang nếu cần
+    }
+  }
+}
+
+.page-item {
+  margin: 0 4px;
+}
+
+.page-link {
+  color: $sidebar-color !important;
+  border: 1px solid $sidebar-bg-color !important;
+  background-color: $icon-bg-color !important;
+}
+
+.form-label__date {
+  display: flex;
+  border: 1px solid #dee2e6;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+  }
+
+  .form-control__item {
+    width: 20px;
+    border: none;
+  }
+}
+
+.dropdown-item.h4 {
+  font-size: 20px;
+}
+
+.btnRight {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 32px 0 0 !important;
+}

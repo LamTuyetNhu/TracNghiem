@@ -1,0 +1,118 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$white: #fff;
+$red: #bb0606;
+$update: #ac980799;
+$sidebar-bg-color: #6f459b;
+$submenu-bg-color: #8d66af;
+$header-bg-color: rgba(15, 119, 113, 0.2);
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+
+.carousel {
+  height: calc(100% - 80px) !important;
+}
+.notfound {
+  display: block;
+  margin: auto;
+}
+
+.card-info {
+  max-width: 800px;
+  margin: 100px auto 0 auto !important;
+  padding: 0 6px;
+  border: 1px solid $sidebar-bg-color;
+
+  .card-info__img {
+    margin: auto;
+    text-align: center;
+  }
+
+  .card-body {
+    font-size: 24px;
+    .card-title {
+      font-size: 32px;
+      color: $sidebar-bg-color;
+      text-align: center;
+    }
+  }
+}
+
+.carousel.slide {
+  .carousel-indicators button {
+    color: #000 !important;
+  }
+
+  .carousel-control-next {
+    .carousel-control-prev-icon {
+      background-color: #555;
+      color: #000 !important;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+  // position: absolute;
+
+  .footer-icon {
+    margin: 12px;
+    color: $white;
+    font-size: 20px;
+    padding: 6px 10px;
+    border: 2px solid $sidebar-bg-color;
+    background-color: $submenu-bg-color;
+    border-radius: 15px;
+  }
+
+  .submit-btn {
+    border: 2px solid $white;
+    background-color: $sidebar-bg-color;
+    color: $white;
+  }
+
+  .update-btn {
+    border: 2px solid $white;
+    background-color: $update;
+    color: #000;
+  }
+
+  .error-btn {
+    border: 2px solid $white;
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.bx-show::before {
+  content: "\f4a1";
+}
+
+.bx-hide::before {
+  content: "\f4a5";
+}
+
+.password-toggle::before {
+  font-family: "Boxicons";
+  font-size: 18px;
+  color: #555;
+}
+
+@media screen and (max-width: 575px) {
+  .card-info {
+    margin: 25px auto 0 auto !important;
+  }
+}

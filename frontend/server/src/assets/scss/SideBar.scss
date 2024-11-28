@@ -1,0 +1,54 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$sidebar-bg-color: rgba(15, 119, 113, 1);
+$submenu-bg-color: rgba(15, 119, 113, 0.5);
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+.sidebar-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .sidebar-btn {
+    transition: width 0.3s;
+    width: 150px;
+    padding: 1px 15px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    span {
+      margin-left: 5px;
+      font-size: 13px;
+    }
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
+
+.collapsed {
+  .sidebar-btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0;
+  }
+}
+
+.pro-menu-item {
+  font-size: 20px !important;
+}
+
+.pro-sidebar.collapsed .pro-menu > ul > .pro-menu-item.pro-sub-menu > .pro-inner-list-item > .popper-inner {
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #30CEBB !important;
+  padding-left: 20px;
+  border-radius: 4px;
+}

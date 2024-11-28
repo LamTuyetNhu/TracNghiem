@@ -1,0 +1,185 @@
+.laptopHeader {
+  display: block;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: white;
+}
+
+.mobileHeader {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: white;
+}
+
+.smallBoxes {
+  display: flex;
+  justify-content: space-between;
+  width: "100%";
+}
+
+.smallBox {
+  position: relative;
+  width: 24%;
+  height: 250px;
+  background-Color: #84D9C4;
+  border-Radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.addSmallBoxButton {
+  background-color: #fff3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.bigBox {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.imageWrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #09090933;
+}
+
+.quill {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 1024px) {
+  .laptopHeader {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: block;
+  }
+
+  .mheader {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .inputmheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .inputMobile {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .inputContainerMb {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .dropdownContainerMb {
+    display: flex;
+    align-items: "center";
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .smallBoxes {
+    display: block;
+  }
+
+  .smallBox {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-Color: #84D9C4;
+    border-Radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .content-mb {
+    width: 100%;
+  }
+
+  .addSmallBoxButton {
+ width: 10%;
+ margin: 0 auto;
+  }
+
+  .dropdownMenu {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: 12px;
+  }
+
+  .dropdownMenuIcon {
+    font-size: 20px;
+  }
+
+  
+}
+
+@media (max-width: 739px) {
+  .bigBox {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .imageWrapper {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #09090933;
+    margin-bottom: 10px;
+  }
+
+  .quill {
+    height: 50%;
+  }
+}

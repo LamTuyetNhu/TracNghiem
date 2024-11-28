@@ -1,0 +1,296 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$white: #fff;
+$red: #bb0606;
+$sidebar-bg-color: rgba(15, 119, 113, 1);
+$submenu-bg-color: rgba(15, 119, 113, 0.5);
+$header-bg-color: rgba(15, 119, 113, 0.2);
+
+.detail-quiz-container {
+  display: flex;
+  gap: 20px;
+  padding: 32px;
+  // height: 90.3vh;
+
+  .left-content {
+    border: 1px solid $red;
+    width: 30%;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: $header-bg-color;
+
+    .main-times {
+      border-bottom: 1px dashed rgb(15, 119, 113);
+      padding-bottom: 14px;
+      text-align: center;
+      font-weight: 600;
+      padding-top: 10px;
+      font-size: 32px;
+      color: $sidebar-bg-color;
+    }
+
+    .main-question {
+      display: flex;
+      gap: 20px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+      padding: 15px;
+
+      .question {
+        border: 1px solid $sidebar-bg-color;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          color: $red;
+          border: 1px solid $red;
+        }
+
+        &.selected {
+          background-color: #ccc;
+        }
+
+        &.clicked {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  .right-content {
+    border: 1px solid $sidebar-bg-color;
+    width: 70%;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: $header-bg-color;
+    position: relative;
+
+    .title {
+      font-size: 36px;
+      font-weight: 800;
+      color: $sidebar-bg-color;
+    }
+
+    .question {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .answers {
+      font-size: 24px;
+    }
+
+    .q-content {
+      // margin-bottom: 32px;
+      .q-body {
+        text-align: center;
+        .q-image {
+          height: 200px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      // position: absolute;
+      // bottom: 0;
+
+      .footer-icon {
+        margin: 12px;
+        color: $white;
+        font-size: 20px;
+        padding: 6px 10px;
+        border: 2px solid $sidebar-bg-color;
+        background-color: $submenu-bg-color;
+        border-radius: 15px;
+      }
+
+      .submit-btn {
+        border: 2px solid $white;
+        background-color: $sidebar-bg-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+.btn-success {
+  color: $white;
+  background-color: $sidebar-bg-color !important;
+}
+
+.btn-danger {
+  color: $white;
+  background-color: $red !important;
+}
+
+.circle-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ccc; /* gray color */
+  position: relative;
+  margin: 0 auto;
+}
+
+.questions-container {
+  margin: 32px;
+  font-size: 20px;
+  .add-new-question {
+    .form-label {
+      font-weight: 500;
+      color: $sidebar-bg-color;
+    }
+
+    .form-select1:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .space-input {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .form-control {
+      font-size: 20px;
+    }
+
+    .form-control:focus {
+      outline: none;
+      box-shadow: none;
+      border: 1px solid $sidebar-bg-color;
+    }
+
+    .form-control.error {
+        border-color: red;
+      }
+
+    .questions-content {
+      .form-item {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+
+      // .form-control {
+      //   // Thiết lập border mặc định
+      //   border: 1px solid #ced4da;
+      // }
+    
+      // // Thiết lập border đỏ cho input khi nằm trong trạng thái lỗi
+      // .form-control.error {
+      //   border-color: red;
+      // }
+    }
+
+    .answers-content {
+      display: flex;
+      align-items: end;
+
+      .answers-checkbox {
+        margin-right: 12px;
+      }
+      .form-item {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .form-check-input {
+        margin-top: 25px !important;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    // bottom: 0;
+
+    .footer-icon {
+      margin: 12px;
+      color: $white;
+      font-size: 20px;
+      padding: 6px 10px;
+      border: 2px solid $sidebar-bg-color;
+      background-color: $submenu-bg-color;
+      border-radius: 15px;
+    }
+
+    .submit-btn {
+      border: 2px solid $white;
+      background-color: $sidebar-bg-color;
+      color: $white;
+    }
+  }
+}
+
+.users-content__btn {
+  display: flex;
+  align-items: center;
+  .icon-addQues {
+    color: $sidebar-bg-color;
+    font-size: 40px;
+    margin: 8px;
+  }
+
+  .icon-minusQues {
+    color: $red;
+    font-size: 40px;
+    margin: 8px;
+  }
+}
+
+.icon {
+  color: $sidebar-bg-color;
+  font-size: 40px;
+  margin: 8px;
+}
+
+.icon-img {
+  width: 40px;
+  
+}
+
+.form-control {
+  // Thiết lập border mặc định
+  border: 1px solid #ced4da;
+}
+
+// Thiết lập border đỏ cho input khi nằm trong trạng thái lỗi
+.form-control.error {
+  border-color: red;
+}
+
+.register-thi {
+  margin-top: 12%;
+
+  .card-header {
+    background-color: $sidebar-bg-color;
+    font-size: 32px;
+    color: $white;
+
+  }
+
+  .card-title {
+    font-weight: 300;
+
+  }
+  .card-text {
+    .card-text-color {
+      color: $sidebar-bg-color;
+      cursor: pointer;
+    }
+  }
+}

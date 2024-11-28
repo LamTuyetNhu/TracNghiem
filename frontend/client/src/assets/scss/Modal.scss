@@ -1,0 +1,26 @@
+$sidebar-color: #000;
+$icon-bg-color: #f1f1f1;
+$sidebar-bg-color: #6F459B;
+$submenu-bg-color: #8D66AF;
+
+.modal-dialog {
+  .modal-content {
+    .modal-header {
+      border-bottom: none;
+      .modal-title.h4 {
+        color: $sidebar-bg-color;
+      }
+
+      .btn-close {
+        color: $sidebar-bg-color;
+      }
+    }
+
+    .modal-body {
+    }
+
+    .modal-footer {
+      border-top: none;
+    }
+  }
+}
